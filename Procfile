@@ -1,1 +1,1 @@
-cd cmd/bot && go run main.go
+web: cd cmd/bot && go run main.go
