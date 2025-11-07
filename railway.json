@@ -1,0 +1,9 @@
+{
+  "build": {
+    "builder": "NIXPACKS"
+  },
+  "deploy": {
+    "startCommand": "cd cmd/bot && ./bot",
+    "restartPolicyType": "ON_FAILURE"
+  }
+}
