@@ -264,7 +264,7 @@ func (b *Bot) handleLeaderboard(chatID int64) {
 		return
 	}
 
-	message := "🏆 *Топ 10 игроков*\n\n"
+	message := "🏆 <b>Топ 10 игроков<b>\n\n"
 
 	for i, entry := range top {
 		username := entry.FirstName
@@ -287,7 +287,7 @@ func (b *Bot) handleLeaderboard(chatID int64) {
 	}
 
 	msg := tgbotapi.NewMessage(chatID, message)
-	msg.ParseMode = "Markdown"
+	msg.ParseMode = "HTML"
 
 	keyboard := tgbotapi.NewInlineKeyboardMarkup(
 		tgbotapi.NewInlineKeyboardRow(
