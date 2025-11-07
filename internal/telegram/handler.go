@@ -264,7 +264,7 @@ func (b *Bot) handleLeaderboard(chatID int64) {
 		return
 	}
 
-	message := "🏆 <b>Топ 10 игроков<b>\n\n"
+	message := "🏆 <b>Топ 10 игроков</b>\n\n"
 
 	for i, entry := range top {
 		username := entry.FirstName
